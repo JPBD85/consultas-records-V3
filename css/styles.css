@@ -1,0 +1,53 @@
+
+/* styles.css - Sitio de Consultas Records (Web + Multimedia) - con logo en header */
+:root{
+  --bg:#0b1020; --card:#111a33; --ink:#e8ecff; --muted:#a9b3d9; --accent:#7aa2ff;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial;
+  color:var(--ink);
+  background: url('assets/img/logo.png') no-repeat center center fixed, linear-gradient(180deg,#0b1020,#0f214f 55%, #0b1020);
+  background-size: 38%, cover;
+  position:relative;
+}
+
+/* Watermark blur layer */
+body::before{
+  content:""; position:fixed; inset:0;
+  backdrop-filter: blur(8px);
+  background: rgba(10,15,35,.55);
+  z-index:-1;
+}
+
+.header{
+  position:sticky; top:0; z-index:10;
+  backdrop-filter: blur(6px);
+  background: rgba(11,16,32,.75);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.nav{display:flex; gap:12px; align-items:center; padding:8px 18px; max-width:1100px; margin:0 auto}
+.nav img.logo{height:40px; width:auto; border-radius:6px; margin-right:8px; border:1px solid rgba(255,255,255,0.06); background:rgba(255,255,255,0.02); padding:4px}
+.nav a{color:var(--ink); text-decoration:none; padding:8px 12px; border-radius:10px; border:1px solid transparent}
+.nav a:hover, .nav a[aria-current="page"]{background:rgba(122,162,255,.15); border-color:rgba(122,162,255,.35)}
+.container{max-width:1100px; margin:0 auto; padding:24px}
+.card{background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:18px; margin:18px 0}
+.grid{display:grid; gap:16px}
+.grid.cols-2{grid-template-columns:repeat(2,1fr)}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.table{width:100%; border-collapse:collapse; font-size:14px}
+.table th,.table td{padding:10px 12px; border-bottom:1px solid rgba(255,255,255,.12); text-align:left}
+.badge{display:inline-flex; gap:8px; align-items:center; padding:6px 10px; border-radius:999px; background:rgba(122,162,255,.15); border:1px solid rgba(122,162,255,.35)}
+.btn{display:inline-flex; gap:8px; align-items:center; padding:10px 14px; border-radius:10px; border:1px solid rgba(255,255,255,.18); background:rgba(255,255,255,.05); color:var(--ink); text-decoration:none}
+.btn:hover{background:rgba(255,255,255,.1)}
+.kpi{font-weight:700; font-size:28px}
+footer{color:var(--muted); text-align:center; margin:36px 0 18px}
+input,select,textarea{width:100%; padding:10px 12px; color:var(--ink); background:#0c1231; border:1px solid rgba(255,255,255,.14); border-radius:10px}
+label{font-size:13px; color:var(--muted)}
+@media (max-width:900px){
+  .grid.cols-3{grid-template-columns:1fr}
+  .grid.cols-2{grid-template-columns:1fr}
+  .nav{padding:12px}
+  .nav img.logo{height:34px}
+}

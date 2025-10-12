@@ -1,0 +1,17 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Documentos · Consultas Records</title><link rel="stylesheet" href="css/styles.css"></head><body>
+<header class="header">
+  <nav class="nav" aria-label="Principal">
+    <img src="assets/img/logo.png" alt="Logo" class="logo" />
+    <a href="index.html">Inicio</a>
+    <a href="procesos.html">Procesos</a>
+    <a href="documentos.html">Documentos</a>
+    <a href="reportes.html">Reportes</a>
+    <a href="acerca.html">Acerca</a>
+  </nav>
+</header>
+<main class="container"><h1>Documentos</h1><div class="grid cols-3"><article id="conyuge" class="card"><h3>Inclusión de Cónyuge</h3><p>Formato y guía.</p><a class="btn" href="Proceso Inclusion conyuge.pdf" target="_blank">Abrir PDF</a></article><article id="pareja" class="card"><h3>Inclusión de Pareja de Vida</h3><p>Formato y guía.</p><a class="btn" href="Proceso Inclusion Pareja de Vida.pdf" target="_blank">Abrir PDF</a></article><article id="regla10" class="card"><h3>Regla 10 CS</h3><p>Formato y guía.</p><a class="btn" href="Regla 10 CS.pdf" target="_blank">Abrir PDF</a></article></div></main>
+<footer class="container">
+  <p>Sitio de Consultas · Área de Records · Web + Multimedia · 2025</p>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/script.js"></script></body></html>
